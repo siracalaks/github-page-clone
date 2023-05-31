@@ -1,0 +1,729 @@
+.mainRight {
+  flex: 1;
+  background-color: var(--first-color);
+  color: var(--grey-color);
+  height: 100vh;
+}
+.mainRight .mainRightContainer {
+  padding: 40px;
+}
+.mainRight .mainRightContainer .mainRightText {
+  display: flex;
+  gap: 24px;
+}
+.mainRight .mainRightContainer .mainRightText h2 {
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition-delay: 0.04s;
+}
+.mainRight .mainRightContainer .mainRightText :hover {
+  background-color: var(--btn-color);
+}
+.mainRight .mainRightContainer .lineTwo {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+}
+.mainRight .mainRightContainer .box {
+  background-color: var(--input-color);
+  border-radius: 4px;
+  padding: 26px;
+  border: 1px solid var(--border-color);
+}
+.mainRight .mainRightContainer .box p {
+  margin: 16px 0;
+}
+.mainRight .mainRightContainer .box .btn {
+  background-color: var(--btn-color);
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mainRight .mainRightContainer .box a {
+  text-decoration: none;
+  color: var(--text-blue-color);
+}
+.mainRight .mainRightContainer .boxCenter {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .boxCenter .boxCenterFirst {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+}
+.mainRight .mainRightContainer .footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .footer .footerFirst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 4px;
+}
+.mainRight .mainRightContainer .footer .footerFirst .svg {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mainRight .mainRightContainer .footer .footerSecond {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  max-width: 480px;
+}
+.mainRight .mainRightContainer .footer .footerSecond .footerSecondInside h4 {
+  margin: 10px;
+  cursor: pointer;
+}
+.mainRight span {
+  color: var(--text-blue-color);
+}
+
+.menu {
+  background-color: var(--btn-color);
+  position: absolute;
+  top: 44px;
+  right: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--line-color);
+  font-size: 14px;
+  width: 180px;
+}
+.menu .menuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menuContainer p {
+  cursor: pointer;
+  width: 100%;
+  padding: 6px 16px;
+}
+.menu .menuContainer p a {
+  text-decoration: none;
+  color: white;
+}
+.menu .menuContainer p:last-child {
+  margin-bottom: 8px;
+  padding: 6px 16px 6px;
+}
+.menu .menuContainer p:hover {
+  background-color: rgb(0, 136, 255);
+}
+.menu .menuContainer .lineThree {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+  margin: 8px 0;
+}
+.menu .menuContainer .menuStatus input {
+  background-color: transparent;
+  border: 1px solid var(--line-color);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-color);
+  color: white;
+  height: 60px;
+  padding: 2px 28px;
+  position: sticky;
+  top: 0;
+}
+.navbar .navLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .navLeft .svg {
+  width: 40px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  color: white;
+}
+.navbar .navLeft input {
+  width: 260px;
+  height: 34px;
+  background-color: var(--input-color);
+  margin-left: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+  border: 1px solid var(--line-color);
+  border-radius: 4px;
+}
+.navbar .navLeft input:focus {
+  width: 400px;
+  transition: width ease-out 0.3s;
+}
+.navbar .navCenter {
+  flex: 1;
+  display: flex;
+  gap: 18px;
+  margin-left: 18px;
+  align-items: center;
+  color: white;
+}
+.navbar .navCenter h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.navbar .navRight {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  justify-content: center;
+}
+.navbar .navRight > * {
+  cursor: pointer;
+}
+.navbar .navRight .navRightIcons {
+  margin-right: 12px;
+}
+.navbar .navRight img {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+.mainLeftContainer {
+  width: 340px;
+  background-color: var(--second-color);
+  height: 560px;
+  overflow: hidden;
+  border-right: 1px solid var(--border-color);
+}
+.mainLeftContainer .mainLeft {
+  max-width: 260px;
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-color: transparent;
+  height: 100%;
+  padding: 1px;
+}
+.mainLeftContainer .mainLeft .line {
+  padding: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+}
+.mainLeftContainer .mainLeft .mainLeftName {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.mainLeftContainer .mainLeft .mainLeftName img {
+  width: 76px;
+  border-radius: 50%;
+}
+.mainLeftContainer .mainLeft .img {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.mainLeftContainer .mainLeft h2 {
+  font-size: 16px;
+  color: var(--grey-color);
+}
+.mainLeftContainer .mainLeft .mainLeftLists {
+  display: flex;
+  flex-direction: column;
+}
+.mainLeftContainer .mainLeft .mainLeftLists .item {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 6px 0;
+}
+.mainLeftContainer .mainLeft .mainLeftLists .item img {
+  width: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.mainLeftContainer .mainLeft .mainLeftLists .item h2 {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.mainLeftContainer .mainLeft .mainLeftLists a {
+  text-decoration: none;
+  color: var(--grey-two-color);
+  font-size: 12px;
+  margin: 14px 0 20px;
+}
+.mainLeftContainer .mainLeft .recentRepo {
+  width: 100%;
+  margin: 24px auto 8px;
+}
+.mainLeftContainer .mainLeft .recentRepo .inputBox {
+  padding: 2px;
+}
+.mainLeftContainer .mainLeft .recentRepo .recentRepos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainLeftContainer .mainLeft .recentRepo .recentRepos h2 {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.mainLeftContainer .mainLeft .recentRepo .recentRepos button {
+  cursor: pointer;
+  width: 64px;
+  height: 28px;
+  border: none;
+  background-color: #2a913d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.mainLeftContainer .mainLeft .recentRepo .recentRepos button:hover {
+  background-color: #2a913d;
+}
+.mainLeftContainer .mainLeft .recentRepo input {
+  width: 100%;
+  margin: 10px auto;
+  height: 34px;
+  background-color: #0c1117;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+  border: 1px solid var(--line-color);
+  border-radius: 4px;
+}
+.mainLeftContainer .mainLeft .recentRepo .inputBoxTwo {
+  margin-bottom: 80px;
+  padding: 2px;
+}
+.mainLeftContainer .mainLeft .recentRepo p {
+  margin: 12px auto;
+  color: var(--grey-two-color);
+  font-size: 12px;
+}
+
+/* Hide scrollbar for Chrome , Safari and Opera */
+.mainLeft ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE , Edge and Firefox */
+.mainLeft {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.mainRight {
+  flex: 1;
+  background-color: var(--first-color);
+  color: var(--grey-color);
+  height: 100vh;
+}
+.mainRight .mainRightContainer {
+  padding: 40px;
+}
+.mainRight .mainRightContainer .mainRightText {
+  display: flex;
+  gap: 24px;
+}
+.mainRight .mainRightContainer .mainRightText h2 {
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition-delay: 0.04s;
+}
+.mainRight .mainRightContainer .mainRightText :hover {
+  background-color: var(--btn-color);
+}
+.mainRight .mainRightContainer .lineTwo {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+}
+.mainRight .mainRightContainer .box {
+  background-color: var(--input-color);
+  border-radius: 4px;
+  padding: 26px;
+  border: 1px solid var(--border-color);
+}
+.mainRight .mainRightContainer .box p {
+  margin: 16px 0;
+}
+.mainRight .mainRightContainer .box .btn {
+  background-color: var(--btn-color);
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mainRight .mainRightContainer .box a {
+  text-decoration: none;
+  color: var(--text-blue-color);
+}
+.mainRight .mainRightContainer .boxCenter {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .boxCenter .boxCenterFirst {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+}
+.mainRight .mainRightContainer .footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .footer .footerFirst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 4px;
+}
+.mainRight .mainRightContainer .footer .footerFirst .svg {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mainRight .mainRightContainer .footer .footerSecond {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  max-width: 480px;
+}
+.mainRight .mainRightContainer .footer .footerSecond .footerSecondInside h4 {
+  margin: 10px;
+  cursor: pointer;
+}
+.mainRight span {
+  color: var(--text-blue-color);
+}
+
+.main {
+  display: flex;
+  background-color: var(--first-color);
+}
+
+.left {
+  width: 310px;
+}
+.left .image {
+  height: 200px;
+  width: 220px;
+  position: relative;
+  margin: 4px auto;
+}
+.left .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.left .image .emoticonBox {
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  top: 160px;
+  right: -8px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.left .image .emoticonBox .emoticon {
+  width: 20px;
+  height: 20px;
+}
+.left .leftDetails {
+  height: 200px;
+  width: 100%;
+  color: white;
+}
+.left .leftDetails h2 {
+  font-size: 26px;
+  margin: 24px 0;
+}
+.left .leftDetails button {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--btn-color);
+  border: 1px solid rgb(80, 80, 80);
+  color: white;
+  cursor: pointer;
+}
+
+.mainRight {
+  flex: 1;
+  background-color: var(--first-color);
+  color: var(--grey-color);
+  height: 100vh;
+}
+.mainRight .mainRightContainer {
+  padding: 40px;
+}
+.mainRight .mainRightContainer .mainRightText {
+  display: flex;
+  gap: 24px;
+}
+.mainRight .mainRightContainer .mainRightText h2 {
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition-delay: 0.04s;
+}
+.mainRight .mainRightContainer .mainRightText :hover {
+  background-color: var(--btn-color);
+}
+.mainRight .mainRightContainer .lineTwo {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+}
+.mainRight .mainRightContainer .box {
+  background-color: var(--input-color);
+  border-radius: 4px;
+  padding: 26px;
+  border: 1px solid var(--border-color);
+}
+.mainRight .mainRightContainer .box p {
+  margin: 16px 0;
+}
+.mainRight .mainRightContainer .box .btn {
+  background-color: var(--btn-color);
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mainRight .mainRightContainer .box a {
+  text-decoration: none;
+  color: var(--text-blue-color);
+}
+.mainRight .mainRightContainer .boxCenter {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .boxCenter .boxCenterFirst {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+}
+.mainRight .mainRightContainer .footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin-top: 30px;
+}
+.mainRight .mainRightContainer .footer .footerFirst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 4px;
+}
+.mainRight .mainRightContainer .footer .footerFirst .svg {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mainRight .mainRightContainer .footer .footerSecond {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  max-width: 480px;
+}
+.mainRight .mainRightContainer .footer .footerSecond .footerSecondInside h4 {
+  margin: 10px;
+  cursor: pointer;
+}
+.mainRight span {
+  color: var(--text-blue-color);
+}
+
+.overview {
+  width: 870px;
+}
+.overview .overviewDescription {
+  border: 0.4px solid var(--borderColor);
+  padding: 10px;
+  height: 300px;
+  border-radius: 8px;
+}
+.overview .overviewDescription > * {
+  margin: 20px;
+}
+.overview .overviewDescription p {
+  font-size: 14px;
+}
+.overview .overviewDescription h1 {
+  font-size: 24px;
+}
+.overview .overviewDescription h2 {
+  font-size: 20px;
+}
+.overview .overviewDescription .line {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+}
+.overview .repositories {
+  width: 100%;
+}
+.overview .repositories h2 {
+  margin: 30px 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.overview .repositories .repositoriesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.overview .repositories .repositoriesContainer .repositoriesBox {
+  width: 410px;
+  height: 100px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview .repositories .repositoriesContainer .repositoriesBox .repositoriesTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overview .repositories .repositoriesContainer .repositoriesBox .repositoriesTop h3 {
+  color: var(--text-blue-color);
+  font-size: 14px;
+}
+.overview .repositories .repositoriesContainer .repositoriesBox .repositoriesTop p {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.profile {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  width: 100%;
+}
+.profile nav {
+  margin: 30px 0 0 100px;
+  display: flex;
+  gap: 20px;
+}
+.profile nav .profileIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.profile nav .profileIcon:hover {
+  background-color: var(--btn-color);
+}
+.profile nav .profileIcon h2 {
+  font-size: 14px;
+  margin-left: 4px;
+  transition-delay: 0.04s;
+}
+.profile .lineFour {
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+  margin: 14px 0 20px;
+}
+.profile .sectionCenter {
+  display: flex;
+  gap: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #010409 ;
+  --second-color: #0d1118 ;
+  --navbar-color: #161b22 ;
+  --btn-color: #21262d ;
+  --grey-color: #c9d1d9 ;
+  --grey-two-color: #8b949e ;
+  --line-color: #30363d;
+  --input-color: #0d1117 ;
+  --border-color: #30363d ;
+  --text-blue-color: #58a6ff ;
+}
+
+.App {
+  background-color: var(--first-color);
+  height: 100%;
+}/*# sourceMappingURL=App.css.map */
